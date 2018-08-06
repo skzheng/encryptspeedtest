@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Video stream sample</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div>
+      <section>
+        <h1>Encrypted</h1>
+        <video id="videoPlayer" controls>
+          <source src="http://localhost:3000/encrypted" type="video/mp4">
+        </video>
+      </section>
+      <section>
+        <h1>Decrypted</h1>
+        <video id="videoPlayer" controls>
+          <source src="http://localhost:3000/decrypted" type="video/mp4">
+        </video>
+      </section>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
