@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', init, false);
+// document.addEventListener('DOMContentLoaded', init, false);
 
 /** 
 * You can manipulate the video here

@@ -7,17 +7,31 @@
     <div>
       <section>
         <h1>Encrypted</h1>
-        <video id="videoPlayer" controls>
+        <video id="videoPlayer" controls autoplay>
           <source src="http://localhost:3000/encrypted" type="video/mp4">
         </video>
       </section>
       <section>
         <h1>Decrypted</h1>
-        <video id="videoPlayer" controls>
+        <video id="videoPlayer" controls autoplay>
           <source src="http://localhost:3000/decrypted" type="video/mp4">
         </video>
       </section>
     </div>
+    <div>
+        <section>
+          <h1>Encrypted S3</h1>
+          <video id="videoPlayer" controls autoplay>
+            <source src="http://localhost:3000/s3encrypted" type="video/mp4">
+          </video>
+        </section>
+        <section>
+          <h1>Decrypted S3</h1>
+          <video id="videoPlayer" controls autoplay>
+            <source src="http://localhost:3000/s3decrypted" type="video/mp4">
+          </video>
+        </section>
+      </div>
     <script src="index.js"></script>
   </body>
 </html>
