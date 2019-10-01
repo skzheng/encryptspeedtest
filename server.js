@@ -89,9 +89,8 @@ app.get('/encrypted', function(req, res) {
 });
 
 app.get('/s3encrypted', function(req, res) {
-  // let request = http.get("http://s3.amazonaws.com/prototype.sesamecms.org/large-video/test-e.mp4", function(response) {  
-  // });
   request.get("http://s3.amazonaws.com/prototype.sesamecms.org/large-video/test-e.mp4").pipe(s3decipher).pipe(res);
+  // request.get("http://assets-lms-dev.sesamestreetenglish.com/0e8b3e60-5e67-428f-94ae-01ed5e930432").pipe(s3decipher).pipe(res);
 });
 app.get('/s3decrypted', function(req, res) {
   // # 1
